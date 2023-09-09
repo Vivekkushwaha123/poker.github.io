@@ -1,0 +1,43 @@
+
+.affiliate-wrapper {
+  .affliate-title {
+    background: #d9d9d9;
+  }
+  .affiliate-table {
+    @media screen and (max-width: 768px) {
+      padding: 0 5%;
+      padding-bottom: 20px;
+    }
+    background-color: #ffffff;
+    table,
+    th,
+    td {
+      padding: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      table{
+        tbody{
+          tr{
+            border-bottom: 1px solid black;
+            td{
+              display: flex;
+              flex-direction: column;
+              padding: 20px 0;
+            }
+            td:nth-child(2) {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+
+    td:nth-child(2) {
+      text-align: right;
+    }
+    .affiliate-btn {
+      margin-top: 23px;
+    }
+  }
+}

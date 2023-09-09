@@ -1,0 +1,19 @@
+.saving-main-wrapper {
+  .savings-form {
+    .saving-form-wrapper {
+      .saving-input {
+        @media screen and (max-width: 768px) {
+          width: 90%;
+          margin-top: 15px;
+        }
+      }
+    }
+    .saving-input {
+      width: 235px;
+      height: 32px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+      background: #fff;
+    }
+  }
+}

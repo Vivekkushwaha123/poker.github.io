@@ -1,0 +1,45 @@
+.common-table {
+  padding: 10px;
+
+  .table-wrapper {
+    table {
+      tbody {
+        @media screen and (max-width: 768px) {
+          tr{
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0;
+            padding: 15px 10px;
+            td{
+              padding: 5px 0;
+            }
+
+            border-bottom: 1px solid #6E747B;
+          }
+        }
+        tr {
+          td {
+            color: #6e747b;
+            font-family: BIZ UDPGothic;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16.659px; /* 128.146% */
+          }
+        }
+      }
+    }
+  }
+  .table-heading {
+    h1 {
+      color: #2d3748;
+      text-align: center;
+      font-family: BIZ UDPGothic;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 16.659px; /* 104.118% */
+    }
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,51 @@
+.account-page-wrapper {
+  background-color: #fff;
+  color: #333;
+  font-family: BIZ UDPGothic;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.771px;
+  .account-form {
+    @media screen and (max-width: 768px) {
+      .form-div-wrapper {
+        flex-direction: column;
+        padding-left: 30px;
+        .form-select {
+          margin-bottom: 15px;
+        }
+        .form-text {
+          input {
+            width: 91.66667%;
+          }
+        }
+      }
+    }
+
+    label {
+      color: #333;
+      font-family: BIZ UDPGothic;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24.771px; /* 190.549% */
+    }
+    .form-select {
+      select {
+        border-radius: 6px;
+        border: 1px solid #e2e8f0;
+      }
+    }
+
+    .form-text {
+      .form-input {
+        width: 235px;
+        height: 32px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        border: 1px solid #e2e8f0;
+        background: #fff;
+      }
+    }
+  }
+}

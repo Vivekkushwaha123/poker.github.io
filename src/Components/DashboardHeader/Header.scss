@@ -1,0 +1,79 @@
+// Topbar scss ==========================
+
+
+.Topbar{
+  min-height: 72px;
+  border-bottom: 1px solid var(--primaryColor);
+  padding: 1% 5% 1% 5%;
+  background: var(--light);
+
+  .topbarRow{
+    .leftCol{
+      .Logolink{
+
+        .Logo{
+          width: 172px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+// Navbar ==================================================
+.Navbar {
+  .NavbarRow {
+    .NavLink {
+      text-align: center;
+      font-size: 16px;
+      display: inline-block;
+      position: relative;
+      color: var(--text);
+
+      &::after{
+        content: '';
+        display: block;
+        width: 0%;
+        height: 2px;
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        background: var(--primaryColor);
+        transition: all 0.5s ease-in-out;
+      }
+      &:hover{
+        color: var(--primaryColor);
+      }
+      &:hover:after{
+        width: 100%;
+      }
+
+      &:active{
+        color: var(--primaryColor);
+      }
+    }
+  }
+}
+
+
+
+
+
+// Media
+
+@media screen and (min-width:768px) and (max-width :992px) {
+  .Navbar {
+    .NavbarRow {
+      .NavLink {
+        text-align: center;
+        font-size: 12px;
+        display: inline-block;
+        position: relative;
+        color: var(--text);
+      }
+    }
+  }
+}

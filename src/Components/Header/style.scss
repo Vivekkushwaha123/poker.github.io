@@ -1,0 +1,49 @@
+.dashboard-menu-wrapper {
+  .dashboard-wrapper {
+    .btn-wrapper {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+    .humburger-menu-btn {
+      display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      .humburger-menu-btn {
+        display: block;
+        .container {
+          display: inline-block;
+          cursor: pointer;
+          .bar1,
+          .bar2,
+          .bar3 {
+            width: 35px;
+            height: 5px;
+            // background-color: #333;
+            margin: 6px 0;
+            transition: 0.4s;
+          }
+          &.change {
+            .bar1 {
+              transform: translate(0, 11px) rotate(-45deg);
+            }
+
+            .bar2 {
+              opacity: 0;
+            }
+
+            .bar3 {
+              transform: translate(0, -11px) rotate(45deg);
+            }
+          }
+        }
+      }
+    }
+
+    padding: 10px 14px;
+    .dashboard-wrapper-name {
+      margin-right: 30px;
+    }
+  }
+}

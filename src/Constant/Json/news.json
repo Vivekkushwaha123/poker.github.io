@@ -1,0 +1,19 @@
+[
+    {
+        "id" : 1 ,
+        "image" : "./assets/PokerFace.jpg" ,
+        "title" : "ニュースタイトル" , 
+        "description" : "ニュースの説明"
+    },{
+        "id" : 2 ,
+        "image" : "./assets/PokerFace.jpg" ,
+        "title" : "ニュースタイトル" , 
+        "description" : "ニュースの説明"
+    },
+{
+    "id" : 3 ,
+    "image" : "./assets/PokerFace.jpg" ,
+    "title" : "ニュースタイトル" , 
+    "description" : "ニュースの説明"
+}
+]

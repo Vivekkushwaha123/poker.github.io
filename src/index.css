@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primaryColor: #1c53b6;
+  --secondaryColor: #a0a0a0;
+  --primaryLight: #f7f8ff;
+  --primaryHover: #7baaff;
+  --accentColor: #f1f1e6;
+  --light: #ffffff;
+  --text: #111111;
+  --border: #65656557;
+}
+
+* {
+  font-family: "Poppins" !important;
+}
