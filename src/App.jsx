@@ -34,7 +34,7 @@ function App() {
   }, [location.pathname]);
 
   return (
-    <div className="poker-webiste-main-wapper">
+    <div className="poker-webiste-main-wapper flex flex-col">
       {isLogin && <HeaderContainer />}
       <div className="flex website-main-wrapper">
         {isLogin && (
@@ -42,7 +42,7 @@ function App() {
             <DashboardSideBarContainer />
           </div>
         )}
-        <div className="w-full flex justify-center h-full">
+        <div className="w-full flex justify-center">
           <Routes>
             <Route path="/login" element={<LoginContainer />} />
             <Route

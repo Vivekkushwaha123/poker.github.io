@@ -8,9 +8,9 @@ const MyAccountView = () => {
       <div className="account-title flex justify-center items-center">
         口座登録{" "}
       </div>
-      <form action="" className="account-form flex flex-col justify-center ">
+      <form action="" className="account-form flex flex-col justify-center mt-10 ">
         <div className="flex form-div-wrapper justify-around">
-          <div className="form-select flex flex-col w-11/12 md:w-1/4">
+          <div className="form-select flex flex-col w-2/5 ">
             <label htmlFor="dropdown">アプリ</label>
             <select
               name="dropdown"

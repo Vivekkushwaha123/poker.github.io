@@ -16,7 +16,7 @@ const ForgotPasswordView = () => {
                 key={index}
                 type="text"
                 className="w-1/6 py-2 text-center text-lg bg-gray-200 rounded-md"
-                maxlength="1"
+                maxLength="1"
               />
             );
           })}

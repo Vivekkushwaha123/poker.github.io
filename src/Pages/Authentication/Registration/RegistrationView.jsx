@@ -5,10 +5,10 @@ import { eyes } from "../../../assests";
 
 const RegistrationView = ({ handleRegister }) => {
   return (
-    <div className="login-main-wrapper mt-6  flex flex-col justify-center items-center">
-      <div className="flex flex-col justify-center bg-white px-6 pt-0 py-12 lg:px-8 border-2 w-[400px]  rounded-3xl border-black-300">
+    <div className="login-main-wrapper flex mt-3 flex-col justify-center items-center">
+      <div className="flex flex-col justify-center bg-white px-6  py-12 lg:px-8 border-2 w-[400px]  rounded-3xl border-black-300">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-          <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+          <h2 className=" text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
             PokerBacksログイン
           </h2>
         </div>
@@ -21,7 +21,7 @@ const RegistrationView = ({ handleRegister }) => {
               label="パスワード"
               type="email"
               id="email"
-              inputClassName="w-[348px]"
+              inputClassName="w-[348px] mb-5"
             />
             <Input
               htmlFor="password"
@@ -29,13 +29,12 @@ const RegistrationView = ({ handleRegister }) => {
               label="パスワード"
               type="password"
               id="password"
-              inputClassName="w-[348px]"
+              inputClassName="w-[348px] mb-5"
             />
 
-            <label htmlFor="パスワード">パスワード</label>
+            <label htmlFor="パスワード " className="mb-2">パスワード</label>
             <div
-              style={{ margin: 0 }}
-              className="password-div-wrapper m-0 flex justify-between rounded-md px-5  py-1 text-gray-900  border border-l border-black placeholder:text-gray-400"
+              className="password-div-wrapper mb-5 mt-2 flex justify-between rounded-md px-5  py-1 text-gray-900  border border-l border-black placeholder:text-gray-400"
             >
               <input
                 htmlFor="password"
