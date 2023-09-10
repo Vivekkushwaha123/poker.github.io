@@ -1,0 +1,13 @@
+.footer{
+  height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-fixed-saving {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+}

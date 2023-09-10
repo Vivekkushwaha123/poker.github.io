@@ -1,0 +1,19 @@
+.common-input{
+    &:focus{
+        border: 1px solid black;
+        outline: none;
+        box-shadow: none;
+    }
+
+    border: 1px solid black;
+}
+
+.common-input-2{
+    &:focus{
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+    border: 1px solid black;
+}

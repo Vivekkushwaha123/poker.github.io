@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Input, Button } from "../../../Components";
 import { eyes } from "../../../assests";
+import "./styles.scss"
 
 const LoginView = ({handleLogin}) => (
   <div className="login-main-wrapper  flex h-screen flex-col justify-center items-center ">
@@ -20,18 +21,18 @@ const LoginView = ({handleLogin}) => (
             label="メールアドレス"
             type="email"
             id="email"
-            inputClassName="mb-5"
+            inputClassName="mb-5 border border-1 border-black common-input w-[280px]"
           />
 
           <label htmlFor="パスワード">パスワード</label>
-          <div style={{margin: 0}} className="password-div-wrapper m-0 flex justify-between rounded-md px-5  py-1 text-gray-900  border border-l border-gray-400 placeholder:text-gray-400">
+          <div style={{margin: 0}} className="password-div-wrapper m-0 flex justify-between rounded-md px-5  py-1 text-gray-900  border border-l border-black placeholder:text-gray-400">
             <input
               htmlFor="password"
               name="password"
               label="パスワード"
               type="password"
               id="password"
-              className="w-11/12  border-none "
+              className="w-11/12 border-none common-input-2"
             />
             <img src={eyes} alt="eye" srcSet="" width={20} />
           </div>

@@ -1,14 +1,33 @@
-import React from 'react';
-import Button from '../Button/Button';
+import React from "react";
+import Button from "../Button/Button";
+import { pokerLogo } from "../../assests";
+import { NavLink } from "react-router-dom";
+import { HOMEPAGE_NAVBAR } from "../../Constant/constant";
 
 const HomePageHeaderView = () => {
   return (
-    <header className=" bg-slate-200 py-4 px-8 md:flex md:justify-between md:items-center">
-      <div className="flex items-center justify-center md:justify-start">
-        <h1 className="text-black text-3xl font-bold">User My Page</h1>
+    <header className="bg-black  h-[75px] flex items-center justify-evenly w-full">
+      <div className="pokerLogo">
+        <img className="" alt="pokerlogo" src={pokerLogo} />
       </div>
-      <div className="mt-4 md:mt-0">
-        <Button  btnId="logout" btnName="logout"/>
+      <div className="flex w-3/5 items-center justify-evenly">
+        {HOMEPAGE_NAVBAR?.map((ele, i) => (
+          <NavLink
+            key={i}
+            className="cursor-pointer [border:none] p-0 bg-[transparent] relative text-base leading-[16px] font-biz-udpgothic text-darkgray text-center inline-block w-[110px] h-4 shrink-0"
+            to="/"
+          >
+            {" "}
+            初めての方
+          </NavLink>
+        ))}
+      </div>
+      <div className="flex items-center justify-evenly w-1/4">
+        <Button btnName="会員登録" btnClassName="rounded-3xl w-[105.5px]" />
+        <Button
+          btnName="ログイン"
+          btnClassName="bg-black text-white  border border-white w-[105.5px] rounded-3xl "
+        />
       </div>
     </header>
   );

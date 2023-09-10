@@ -99,73 +99,73 @@ export const USER_INFO_TBODY = [
 export const DASBBOARD_SIDEBAR_MENU = [
   {
     text: "ダッシュボード",
-    img : home,
-    route: "/"
-
+    img: home,
+    route: "/",
   },
   {
     text: "アカウント情報",
     img: user,
-    route: "/user"
-
+    route: "/user",
   },
   {
     text: "アカウントの登録",
-    img : adduser,
-    route: "/adduser"
-
+    img: adduser,
+    route: "/adduser",
   },
   {
     text: "出金",
     img: dollar,
-    route: "/saving"
-
+    route: "/saving",
   },
   {
     text: "アフィリエイト",
     img: savings,
-    route: "/affiliate"
+    route: "/affiliate",
   },
   {
     text: "サービスサイトへ",
     img: link,
-    route: "/myaccount"
-
+    route: "/myaccount",
   },
   {
     text: "ログアウト",
     img: back,
-    route: "/login"
-
+    route: "/login",
   },
-
 ];
 
 export const DASBOARD_TABLE_2 = [
   {
-    td1 : "累計アフィリエイト報酬額",
-    td2: "25人"
+    td1: "累計アフィリエイト報酬額",
+    td2: "25人",
   },
   {
-    td1 : "今月のアフィリエイト報酬予定額",
-    td2: "$150"
+    td1: "今月のアフィリエイト報酬予定額",
+    td2: "$150",
   },
   {
-    td1 : "累計集客人数s",
-    td2: "$2,250"
-  }
-]
+    td1: "累計集客人数s",
+    td2: "$2,250",
+  },
+];
 export const DASBOARD_TABLE_1 = [
   {
-    td1 : "現在のキャッシュバック率",
-    td2: "40%"
+    td1: "現在のキャッシュバック率",
+    td2: "40%",
   },
   {
-    td1 : "今月のキャッシュバック予定額",
-    td2: "$150"
+    td1: "今月のキャッシュバック予定額",
+    td2: "$150",
   },
   {
-    td1 : "累計キャッシュバック額",
-    td2: "$2,250"
-  }
-]
+    td1: "累計キャッシュバック額",
+    td2: "$2,250",
+  },
+];
+
+export const HOMEPAGE_NAVBAR = [
+  "初めての方",
+  "サポート",
+  "対応サイト",
+  "私たちについて",
+];

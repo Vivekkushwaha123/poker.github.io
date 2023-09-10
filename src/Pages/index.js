@@ -9,6 +9,7 @@ import AccountRegistrationContainer from "./AccountRegistration/AccountRegistrat
 import DashboardSideBarContainer from "../Components/DashboardSidebar/DashboardSideBarContainer";
 import MyDashboardContainer from "./MyDashboard/myDashboardContainer";
 import SavingsContainer from "./Savings/SavingsContainer";
+import HomePageContainer from "./HomePage/HomePageContainer";
 
 
 export {
@@ -22,6 +23,7 @@ export {
     AccountRegistrationContainer,
     DashboardSideBarContainer,
     MyDashboardContainer,
-    SavingsContainer
+    SavingsContainer,
+    HomePageContainer
 
 }

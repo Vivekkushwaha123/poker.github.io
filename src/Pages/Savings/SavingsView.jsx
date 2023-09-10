@@ -3,7 +3,9 @@ import "./styles.scss";
 
 const SavingsView = () => {
   return (
-    <div className="saving-main-wrapper bg-white p-3  w-11/12">
+    <div
+      className={`saving-main-wrapper  bg-white  p-3  w-11/12`}
+    >
       <h1 className="flex justify-center items-center">出金情報</h1>
       <form className="savings-form flex flex-col mt-6">
         <div className="saving-form-wrapper flex flex-col md:flex-row md:justify-evenly">

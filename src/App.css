@@ -1,6 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+
 body {
   background: #e2e8f0;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply leading-[normal] m-0;
+}
+*,
+::before,
+::after {
+  border-width: 0;
 }
 
 table {
@@ -8,6 +25,7 @@ table {
 }
 
 .website-main-wrapper {
+  height: calc(100vh - 40px);
   .sidebar {
     @media screen and (max-width: 768px) {
       display: none;

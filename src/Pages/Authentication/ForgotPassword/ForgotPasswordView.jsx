@@ -3,8 +3,8 @@ import { Button } from "../../../Components";
 
 const ForgotPasswordView = () => {
   return (
-    <div class="flex justify-center items-center h-screen  bg-gray-100">
-      <div class="w-1/3 p-6  bg-white rounded-lg shadow-md">
+    <div class="flex justify-center items-center h-screen">
+      <div class="w-[400px] p-6  bg-white rounded-lg shadow-md">
         <h2 class="text-xl font-semibold mb-4 flex items-center js">メール認証</h2>
         <p class="text-sm text-gray-500 my-3">
         メール ID に送信された確認コードを入力してください

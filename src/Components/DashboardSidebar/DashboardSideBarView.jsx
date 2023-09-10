@@ -3,7 +3,7 @@ import { kkpokerlogo, pokerLogo, wptLogo } from "../../assests";
 import "./styles.scss";
 
 
-const DashboardSideBarView = ({ handleNavigate }) => {
+const DashboardSideBarView = ({ handleNavigate , isSelectedTab }) => {
   return (
     <div
       className="dashboard-sidebar-wrapper pl-16"
@@ -12,7 +12,7 @@ const DashboardSideBarView = ({ handleNavigate }) => {
         <div
           value={obj?.text}
           key={i}
-          className="flex sidebar-menu-view cursor-pointer"
+          className={`flex sidebar-menu-view cursor-pointer ${isSelectedTab === obj?.route ? "active" : ""}`}
           onClick={() => handleNavigate(obj?.route)}
         >
           <img src={obj?.img} className="sidebar-icon" alt={obj?.text} />

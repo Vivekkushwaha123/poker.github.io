@@ -15,8 +15,9 @@ import {
   SavingsContainer,
   UserInformationContainer,
   DashboardSideBarContainer,
+  HomePageContainer,
 } from "./Pages";
-import { HeaderContainer } from "./Components";
+import { Footer, HeaderContainer } from "./Components";
 import { useLayoutEffect, useState } from "react";
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
   const location = useLocation();
 
   useLayoutEffect(() => {
-    const isAuth = ["login", "forgot-password", "user-registration"];
+    const isAuth = ["login", "forgot-password", "user-registration" , "homepage"];
     if (window.location.href.split("/").some((ele) => isAuth?.includes(ele))) {
       setIsLogin(false);
     } else {
@@ -33,10 +34,8 @@ function App() {
   }, [location.pathname]);
 
   return (
-    <>
-      {isLogin && (
-        <HeaderContainer />
-      )}
+    <div className="poker-webiste-main-wapper">
+      {isLogin && <HeaderContainer />}
       <div className="flex website-main-wrapper">
         {isLogin && (
           <div className="w-1/4 sidebar">
@@ -51,6 +50,7 @@ function App() {
               element={<RegistrationContainer />}
             />
             <Route path="/affiliate" element={<AffilateContainer />} />
+            <Route path="/homepage" element={<HomePageContainer />} />
             <Route path="/user" element={<UserInformationContainer />} />
             <Route path="/saving" element={<SavingsContainer />} />
             <Route path="/myaccount" element={<MyAccountContainer />} />
@@ -63,7 +63,8 @@ function App() {
           </Routes>
         </div>
       </div>
-    </>
+      <Footer />
+    </div>
   );
 }
 

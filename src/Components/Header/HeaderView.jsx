@@ -3,6 +3,7 @@ import "./style.scss";
 import Button from "../Button/Button";
 import { pokerLogo } from "../../assests";
 import { DASBBOARD_SIDEBAR_MENU } from "../../Constant/constant";
+
 const HeaderView = ({
   handleHumburgerClick,
   isHumburgerClicked,
@@ -10,11 +11,9 @@ const HeaderView = ({
 }) => {
   return (
     <div
-      className={`dashboard-menu-wrapper  ${
-        isHumburgerClicked && "bg-zinc-800"
-      }`}
+      className={`dashboard-menu-wrapper ${isHumburgerClicked && "bg-white sticky h-[100vh] top-0 overflow-hidden" } mb-5 `}
     >
-      <div className={`dashboard-wrapper  flex items-center justify-between`}>
+      <div className={`dashboard-wrapper ${isHumburgerClicked && "bg-white"}  flex items-center justify-between`}>
         <div className="logo-wrapper">
           <img src={pokerLogo} alt="logo" loading="lazy" />
         </div>
@@ -27,20 +26,20 @@ const HeaderView = ({
             className={`container ${isHumburgerClicked && "change"}`}
             onClick={handleHumburgerClick}
           >
-            <div className={`bar1 ${isHumburgerClicked ? "bg-white" : "bg-black"}`}></div>
-            <div className={`bar2 ${isHumburgerClicked ? "bg-white" : "bg-black"}`}></div>
-            <div className={`bar3 ${isHumburgerClicked ? "bg-white" : "bg-black"}`}></div>
+            <div className={`bar1 `}></div>
+            <div className={`bar2 `}></div>
+            <div className={`bar3 `}></div>
           </div>
         </div>
       </div>
       {isHumburgerClicked && (
         <div className="main-menu-wrapper">
-          <div className="menu-content  bg-zinc-800  overlay-content">
+          <div className="menu-content bg-white  overlay-content">
             {DASBBOARD_SIDEBAR_MENU?.map((obj, i) => (
               <div
                 value={obj?.text}
                 key={i}
-                className="flex px-10 border-b border-black	sidebar-menu-view py-3 cursor-pointer"
+                className="flex px-10 border-black	sidebar-menu-view py-3 cursor-pointer"
                 onClick={() => handleNavigate(obj?.route)}
               >
                 <img
@@ -48,12 +47,12 @@ const HeaderView = ({
                   className="sidebar-icon mr-3"
                   alt={obj?.text}
                 />
-                <span className="sidebar-font text-white">{obj?.text}</span>
+                <span className="sidebar-font text-black">{obj?.text}</span>
               </div>
             ))}
           </div>
           <div className="menu-footer py-4 flex justify-evenly items-center">
-            <span className="dashboard-wrapper-name text-white">
+            <span className="dashboard-wrapper-name text-black">
               様ダッシュボード
             </span>
             <Button btnName="Top Page" />

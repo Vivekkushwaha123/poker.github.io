@@ -9,7 +9,7 @@ const Input = ({
   handleChange,
   inputClassName,
   maxLength,
-  placeholder
+  placeholder,
 }) => {
   return (
     <>
@@ -30,10 +30,7 @@ const Input = ({
           placeholder={placeholder}
           type={type}
           autoComplete="off"
-          className={
-            "block w-full rounded-md mb-2 px-5 border-0 py-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 " +
-            inputClassName
-          }
+          className={inputClassName + " p-3 border border-1 border-black rounded-lg"}
         />
       </div>
     </>
