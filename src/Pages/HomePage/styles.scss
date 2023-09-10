@@ -1,0 +1,12 @@
+@media screen and (max-width: 768px) {
+  .homepage-wrapper {
+    .second-body {
+        .steps-cards {
+          flex-direction: column;
+          .step-card-wrapper{
+            width: 80%;
+          }
+        }
+    }
+}
+}

@@ -58,7 +58,7 @@ const SavingsView = ({
               <label htmlFor="" className="text-[12px]">
                 数量
               </label>
-              <label htmlFor="" className="text-[12px]" onClick={() => setIsModal2Open(true)}>
+              <label htmlFor="" className="text-[12px]">
                 出金可能数量 0 USDT
               </label>
             </div>
@@ -67,7 +67,7 @@ const SavingsView = ({
               placeholder="ここにアドレスを入力してください"
             />
             <div className="btn-end flex items-center justify-end">
-              <Button btnName="出金" btnClassName="mr-5" />
+              <Button btnName="出金" btnClassName="mr-5" handleClick={() => setIsModal2Open(true)} />
               <div className="money-report text-[12px] flex flex-col items-end">
                 <div className="report-1 mb-3 ">
                   <span className="">最低出金額</span>
@@ -88,7 +88,7 @@ const SavingsView = ({
           size="lg"
           close={(prev) => setIsModal2Open(!prev)}
         >
-          <div className="otp-wrapper px-28">
+          <div className="otp-wrapper">
             <label htmlFor="" className="">
               コードを再送信する
             </label>

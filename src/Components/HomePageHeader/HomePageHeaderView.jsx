@@ -6,15 +6,15 @@ import { HOMEPAGE_NAVBAR } from "../../Constant/constant";
 
 const HomePageHeaderView = () => {
   return (
-    <header className="bg-black  h-[75px] flex items-center justify-evenly w-full">
+    <header className="bg-black h-[75px] flex items-center justify-evenly w-full">
       <div className="pokerLogo">
         <img className="" alt="pokerlogo" src={pokerLogo} />
       </div>
-      <div className="flex w-3/5 items-center justify-evenly">
+      <div className="flex items-center justify-evenly">
         {HOMEPAGE_NAVBAR?.map((ele, i) => (
           <NavLink
             key={i}
-            className="cursor-pointer [border:none] p-0 bg-[transparent] relative text-base leading-[16px] font-biz-udpgothic text-darkgray text-center inline-block w-[110px] h-4 shrink-0"
+            className="cursor-pointer  bg-[transparent] text-base  font-biz-udpgothic text-darkgray text-center "
             to="/"
           >
             {" "}
@@ -22,11 +22,11 @@ const HomePageHeaderView = () => {
           </NavLink>
         ))}
       </div>
-      <div className="flex items-center justify-evenly w-1/4">
-        <Button btnName="会員登録" btnClassName="rounded-3xl w-[105.5px]" />
+      <div className="flex items-center justify-evenly">
+        <Button btnName="会員登録" btnClassName="rounded-3xl" />
         <Button
           btnName="ログイン"
-          btnClassName="bg-black text-white  border border-white w-[105.5px] rounded-3xl "
+          btnClassName="bg-black text-white  border border-white rounded-3xl "
         />
       </div>
     </header>

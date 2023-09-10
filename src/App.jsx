@@ -69,7 +69,7 @@ function App() {
         </div>
       </div>
 
-      <Footer />
+      {isLogin && <Footer />}
     </div>
   );
 }
