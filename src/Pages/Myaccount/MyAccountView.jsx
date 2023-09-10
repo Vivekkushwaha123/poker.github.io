@@ -4,7 +4,7 @@ import { Button } from "../../Components";
 
 const MyAccountView = () => {
   return (
-    <div className="account-page-wrapper py-6 w-11/12">
+    <div className="account-page-wrapper h-fit py-6 w-11/12">
       <div className="account-title flex justify-center items-center">
         口座登録{" "}
       </div>

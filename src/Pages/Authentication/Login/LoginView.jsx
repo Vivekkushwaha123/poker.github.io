@@ -5,7 +5,7 @@ import { eyes } from "../../../assests";
 import "./styles.scss"
 
 const LoginView = ({handleLogin}) => (
-  <div className="login-main-wrapper  flex h-screen flex-col justify-center items-center ">
+  <div className="login-main-wrapper  flex mt-[75px] flex-col justify-center items-center ">
     <div className="flex flex-col justify-center bg-white px-6 py-12 lg:px-8 border-2  rounded-3xl border-black-300">
       <div className="sm:mx-auto sm:w-full sm:max-w-sm">
         <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
@@ -25,7 +25,7 @@ const LoginView = ({handleLogin}) => (
           />
 
           <label htmlFor="パスワード">パスワード</label>
-          <div style={{margin: 0}} className="password-div-wrapper m-0 flex justify-between rounded-md px-5  py-1 text-gray-900  border border-l border-black placeholder:text-gray-400">
+          <div  className="password-div-wrapper mt-2 flex justify-between rounded-md px-5  py-1 text-gray-900  border border-l border-black placeholder:text-gray-400">
             <input
               htmlFor="password"
               name="password"

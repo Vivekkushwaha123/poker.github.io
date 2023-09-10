@@ -14,7 +14,7 @@ const HeaderView = ({
       className={`dashboard-menu-wrapper ${isHumburgerClicked && "bg-white sticky h-[100vh] top-0 overflow-hidden" } mb-5 `}
     >
       <div className={`dashboard-wrapper ${isHumburgerClicked && "bg-white"}  flex items-center justify-between`}>
-        <div className="logo-wrapper">
+        <div className="logo-wrapper"  onClick={() => handleNavigate('/')}>
           <img src={pokerLogo} alt="logo" loading="lazy" />
         </div>
         <div className="btn-wrapper flex items-center ">

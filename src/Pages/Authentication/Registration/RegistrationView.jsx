@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Button, Input } from "../../../Components";
 import { eyes } from "../../../assests";
+import "./style.scss"
 
 const RegistrationView = ({ handleRegister }) => {
   return (
@@ -21,7 +22,7 @@ const RegistrationView = ({ handleRegister }) => {
               label="パスワード"
               type="email"
               id="email"
-              inputClassName="w-[348px] mb-5"
+              inputClassName="w-[348px] mb-5 common-input"
             />
             <Input
               htmlFor="password"
@@ -29,7 +30,7 @@ const RegistrationView = ({ handleRegister }) => {
               label="パスワード"
               type="password"
               id="password"
-              inputClassName="w-[348px] mb-5"
+              inputClassName="w-[348px] mb-5 common-input"
             />
 
             <label htmlFor="パスワード " className="mb-2">パスワード</label>
@@ -42,7 +43,7 @@ const RegistrationView = ({ handleRegister }) => {
                 label="パスワード"
                 type="password"
                 id="password"
-                className="w-11/12  border-none "
+                className="w-11/12  common-input-2"
               />
               <img src={eyes} alt="eye" srcSet="" width={20} />
             </div>

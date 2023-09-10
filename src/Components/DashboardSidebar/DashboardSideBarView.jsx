@@ -6,7 +6,7 @@ import "./styles.scss";
 const DashboardSideBarView = ({ handleNavigate , isSelectedTab }) => {
   return (
     <div
-      className="dashboard-sidebar-wrapper pl-16"
+      className="dashboard-sidebar-wrapper h-[73.9vh] pl-16"
     >
       {DASBBOARD_SIDEBAR_MENU?.map((obj, i) => (
         <div

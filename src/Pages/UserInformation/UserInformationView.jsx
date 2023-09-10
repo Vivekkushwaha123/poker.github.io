@@ -8,7 +8,7 @@ const UserInformationView = () => {
   const [opened, { open, close }] = useDisclosure(false);
   const [isOpened, setIsOpened] = useState(false);
   return (
-    <div className="user-info-wrapper bg-white w-11/12 px-10 py-5">
+    <div className="user-info-wrapper h-fit bg-white w-11/12 px-10 py-5">
       <h1 className="flex justify-center items-center">アカウント情報</h1>
       <table className="user-table-wrapper mt-10">
         <tbody>

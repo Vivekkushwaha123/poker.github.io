@@ -25,7 +25,12 @@ function App() {
   const location = useLocation();
 
   useLayoutEffect(() => {
-    const isAuth = ["login", "forgot-password", "user-registration" , "homepage"];
+    const isAuth = [
+      "login",
+      "forgot-password",
+      "user-registration",
+      "homepage",
+    ];
     if (window.location.href.split("/").some((ele) => isAuth?.includes(ele))) {
       setIsLogin(false);
     } else {
@@ -34,7 +39,7 @@ function App() {
   }, [location.pathname]);
 
   return (
-    <div className="poker-webiste-main-wapper flex flex-col">
+    <div className="poker-webiste-main-wapper  flex flex-col">
       {isLogin && <HeaderContainer />}
       <div className="flex website-main-wrapper">
         {isLogin && (
@@ -63,6 +68,7 @@ function App() {
           </Routes>
         </div>
       </div>
+
       <Footer />
     </div>
   );
