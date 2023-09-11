@@ -9,7 +9,7 @@ const ArticleCard = () => {
           <div className="article-card-wrapper w-full" key={i}>
             <div className="w-full flex flex-row items-center justify-between">
               2023.08.01
-              <div className=" bg-gainsboro-200 w-3/4  h-[27.45px] my-2" />
+              <div className=" gray-line bg-gainsboro-200 w-3/4  h-[27.45px] my-3" />
             </div>
             <div className=" mt-2 bg-gainsboro-100  h-[1.94px]" />
           </div>

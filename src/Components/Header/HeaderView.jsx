@@ -34,7 +34,7 @@ const HeaderView = ({
       </div>
       {isHumburgerClicked && (
         <div className="main-menu-wrapper">
-          <div className="menu-content bg-white  overlay-content">
+          <div className="menu-content bg-white  ">
             {DASBBOARD_SIDEBAR_MENU?.map((obj, i) => (
               <div
                 value={obj?.text}

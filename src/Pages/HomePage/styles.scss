@@ -1,12 +1,84 @@
 @media screen and (max-width: 768px) {
   .homepage-wrapper {
+    .banner-section {
+      // width: 100vw;
+      // padding: 0;
+    }
     .second-body {
-        .steps-cards {
-          flex-direction: column;
-          .step-card-wrapper{
-            width: 80%;
+      padding: 0;
+      width: 100vw;
+      .steps-cards {
+        .purple-right-arrow {
+          transform: rotate(90deg);
+        }
+      }
+      .poker-back-steps {
+        .poker-text {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 25px;
+        }
+        .purple-line {
+          display: none;
+        }
+      }
+      .poker-information {
+        padding: 50px 50px;
+      }
+      .poker-life-cylce-image {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      .steps-cards {
+        flex-direction: column;
+        .step-card-wrapper {
+          width: 80%;
+        }
+      }
+    }
+
+    .mobile-form {
+      display: block;
+    }
+
+    .body-2 {
+      .cards {
+        padding: 0;
+        flex-direction: column;
+        .new-card-wrapper,
+        .article-card-wrapper {
+          margin-top: 20px;
+          width: 100%;
+        }
+
+        .article-card-wrapper{
+          .article-card-wrapper{
+            .gray-line{
+              width: 50%;
+            }
           }
         }
+
+        .new-card-wrapper{
+          .card-wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .grey-line{
+            width: 35%;
+          }
+        }
+      }
     }
-}
+    .form {
+      height: 1000px;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
 }

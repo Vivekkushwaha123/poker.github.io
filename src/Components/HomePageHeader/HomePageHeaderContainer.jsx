@@ -1,5 +1,17 @@
-import HomePageHeaderView from './HomePageHeaderView'
+import { useNavigate } from "react-router-dom";
+import HomePageHeaderView from "./HomePageHeaderView";
+import { useState } from "react";
 
-const HomePageHeaderContainer = () =>  <HomePageHeaderView/>
+const HomePageHeaderContainer = () => {
+  const [isHumburgerClicked, setIsHumburgerClicked] = useState(false);
+  const navigate = useNavigate();
 
-export default HomePageHeaderContainer
+  const handleHumburgerClick = () => setIsHumburgerClicked((prev) => !prev);
+  const handleNavigate = (route) => {
+    setIsHumburgerClicked(false);
+    navigate(route);
+  };
+  return <HomePageHeaderView  {...{handleHumburgerClick ,isHumburgerClicked , handleNavigate}}/>;
+};
+
+export default HomePageHeaderContainer;

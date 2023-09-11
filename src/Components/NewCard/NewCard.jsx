@@ -6,12 +6,12 @@ const NewCard = () => {
     <div className="text-[14.54px] w-full text-darkslategray-200 font-biz-udpgothic">
       {[1, 2, 3, 4]?.map((ele, i) => (
         <div className="new-card-wrapper" key={i}>
-          <div className="flex flex-row items-center justify-start gap-[13.57px]">
+          <div className="flex card-wrapper flex-row items-center justify-start gap-[13.57px]">
             <div className=" leading-[23.27px] inline-block w-1/4 shrink-0">
               2023.08.01
             </div>
             <Button btnName="キャンペーン" btnClassName="rounded-3xl w-1/4" />
-            <div className=" bg-gainsboro-200 w-1/2 h-[27.15px] my-3" />
+            <div className=" grey-line bg-gainsboro-200 w-1/2 h-[27.15px] my-3" />
           </div>
           <div className=" mt-2 bg-gainsboro-100 w-full h-[1.94px]" />
         </div>

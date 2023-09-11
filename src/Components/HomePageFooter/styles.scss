@@ -1,0 +1,25 @@
+@media screen and (max-width: 768px) {
+  .homepage-footer-wrapper {
+    .logo-footer-img{
+        width: 250px;
+        height: 100px;
+    }
+    .poker-footer-text{
+        font-size: 4vw;
+    }
+    .footer-main-menu-wrapper {
+      flex-direction: column-reverse;
+      padding: 0;
+      .footer-menu-wrapper {
+
+        .menu-container{
+            margin-top: 40px;
+            margin-left: 70px;
+        }
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+      }
+    }
+  }
+}

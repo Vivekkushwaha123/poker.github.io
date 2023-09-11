@@ -12,6 +12,8 @@ import NewCard from "./NewCard/NewCard";
 import FormCard from "./FormCard/FormCard";
 import RecoomededPokerSection from "./RecommendedPoker/RecoomededPokerSection";
 import ArticleCard from "./ArticleCard/ArticleCard";
+import HomePageFooterContainer from "./HomePageFooter/HomePageFooterContainer";
+import HomePageFormContainer from "./HomePageForm/HomePageFormContainer";
 
 export {
   DashboardTable,
@@ -27,5 +29,7 @@ export {
   NewCard,
   RecoomededPokerSection,
   FormCard,
-  ArticleCard
+  ArticleCard,
+  HomePageFooterContainer,
+  HomePageFormContainer
 };
