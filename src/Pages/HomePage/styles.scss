@@ -1,9 +1,5 @@
 @media screen and (max-width: 768px) {
   .homepage-wrapper {
-    .banner-section {
-      // width: 100vw;
-      // padding: 0;
-    }
     .second-body {
       padding: 0;
       width: 100vw;
@@ -55,21 +51,21 @@
           width: 100%;
         }
 
-        .article-card-wrapper{
-          .article-card-wrapper{
-            .gray-line{
+        .article-card-wrapper {
+          .article-card-wrapper {
+            .gray-line {
               width: 50%;
             }
           }
         }
 
-        .new-card-wrapper{
-          .card-wrapper{
+        .new-card-wrapper {
+          .card-wrapper {
             display: flex;
             justify-content: space-between;
             align-items: center;
           }
-          .grey-line{
+          .grey-line {
             width: 35%;
           }
         }
@@ -80,5 +76,30 @@
       display: flex;
       flex-direction: column-reverse;
     }
+  }
+}
+
+.banner-2 {
+  background-image: url("../../assests/banner2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 190px;
+}
+
+.banner-section {
+  background-image: url("../../assests/banner.png");
+  height: 513px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  @media screen and (max-width: 768px) {
+    margin-top: -50px  !important ;
+    .banner-data {
+    opacity: 0;
+    }
+    background-image: url("../../assests/banner-mobile.jpg");
+    // height: inherit;
   }
 }

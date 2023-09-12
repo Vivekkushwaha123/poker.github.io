@@ -1,54 +1,90 @@
-@media screen and (max-width: 768px) {
-    .homepage-header-wrapper{
-        justify-content: space-evenly !important;
-        .pokerLogo{
-            display: inline;
-            width: auto;
-        }
-  
-        .menu-wrapper{
-            display: none;
-        }
-        .header-btn{
-            display: inline;
-            width: auto;
-        }
+@media screen and (max-width: 500px) {
+  .header-main-wrapper {
+    .homepage-header-wrapper {
+      display: flex;
+      justify-content: space-between I !important;
 
-        .humburger{
-            display: block;
-            color: white;
-        }
+      .header-btn {
+        display: none;
+      }
     }
+    .mobile-navbar {
+      padding-left: 10%;
+      .sm-mobile-500 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    padding-right: 0px;
+    .mobile-navbar{
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .humburger-menu-btn {
+  .homepage-header-wrapper {
+    padding: 0 20px;
+    @media screen and (max-width: 500px) {
+      justify-content: space-between !important;
+    }
+    justify-content: space-evenly !important;
+    .pokerLogo {
+      display: inline;
+      width: auto;
+    }
+
+    .menu-wrapper {
+      display: none;
+    }
+    .header-btn {
+      display: inline;
+      width: auto;
+    }
+
+    .humburger {
       display: block;
-      .container {
-        display: inline-block;
-        cursor: pointer;
-        .bar1,
-        .bar2,
-        .bar3 {
-          width: 35px;
-          height: 5px;
-          background-color: white;
-          margin: 6px 0;
-          transition: 0.4s;
+      color: white;
+    }
+  }
+
+  .mobile-navbar{
+    padding-right: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .humburger-menu-btn {
+    display: block;
+    .container {
+      display: inline-block;
+      cursor: pointer;
+      .bar1,
+      .bar2,
+      .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      &.change {
+        .bar1 {
+          transform: translate(0, 11px) rotate(-45deg);
         }
-        &.change {
-          .bar1 {
-            transform: translate(0, 11px) rotate(-45deg);
-          }
 
-          .bar2 {
-            opacity: 0;
-          }
+        .bar2 {
+          opacity: 0;
+        }
 
-          .bar3 {
-            transform: translate(0, -11px) rotate(45deg);
-          }
+        .bar3 {
+          transform: translate(0, -11px) rotate(45deg);
         }
       }
     }
   }
+}
+
+.sm-mobile-500{
+  display: none;
+}

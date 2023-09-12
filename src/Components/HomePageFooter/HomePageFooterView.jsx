@@ -28,29 +28,28 @@ const HomePageFooterView = () => {
             <div className="flex menu-container flex-col">
               <div className="">■ 企業情報</div>
               <div className="flex flex-col mt-4">
-                <span className="my-1">よくある質問</span>
-                <span className="my-1">よくある質問</span>
-                <span className="my-1">よくある質問</span>
-                <span className="my-1">よくある質問</span>
-                <span className="my-1">よくある質問</span>
+                <li className="my-1">私たちについて</li>
+                <li className="my-1">プライバシーポリシー</li>
+                <li className="my-1">お知らせ</li>
+                <li className="my-1">リスク開示</li>
+                <li className="my-1">採用情報</li>
+              </div>
+            </div>
+            <div className="flex menu-container flex-col">
+              <div className="">■ サービス</div>
+              <div className="flex flex-col mt-4">
+                <li className="my-1">KKPOKER</li>
+                <li className="my-1"> WPT Groba</li>
               </div>
             </div>
             <div className="flex menu-container flex-col">
               <div className="">■ 企業情報</div>
               <div className="flex flex-col mt-4">
-                <span className="my-1">よくある質問</span>
-                <span className="my-1">よくある質問</span>
-                <span className="my-1">よくある質問</span>
-              </div>
-            </div>
-            <div className="flex menu-container flex-col">
-              <div className="">■ 企業情報</div>
-              <div className="flex flex-col mt-4">
-                <span className="my-1">よくある質問</span>
-                <span className="my-1">よくある質問</span>
-                <span className="my-1">よくある質問</span>
-                <span className="my-1">よくある質問</span>
-                <span className="my-1">よくある質問</span>
+                <li className="my-1">よくある質問</li>
+                <li className="my-1">登録方法</li>
+                <li className="my-1">出金方法</li>
+                <li className="my-1">アフィリエイト</li>
+                <li className="my-1">お問い合わせ</li>
               </div>
             </div>
           </div>

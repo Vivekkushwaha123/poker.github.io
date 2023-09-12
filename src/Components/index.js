@@ -9,7 +9,6 @@ import DataViewTableContainer from "./DataViewTable/DataViewTableContainer";
 import ModalContainer from "./Modal/ModalContainer";
 import Footer from "./Footer/Footer";
 import NewCard from "./NewCard/NewCard";
-import FormCard from "./FormCard/FormCard";
 import RecoomededPokerSection from "./RecommendedPoker/RecoomededPokerSection";
 import ArticleCard from "./ArticleCard/ArticleCard";
 import HomePageFooterContainer from "./HomePageFooter/HomePageFooterContainer";
@@ -28,7 +27,6 @@ export {
   Footer,
   NewCard,
   RecoomededPokerSection,
-  FormCard,
   ArticleCard,
   HomePageFooterContainer,
   HomePageFormContainer

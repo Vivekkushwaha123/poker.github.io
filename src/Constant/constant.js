@@ -170,3 +170,7 @@ export const HOMEPAGE_NAVBAR = [
   "対応サイト",
   "私たちについて",
 ];
+
+export const NEWS_BUTTON_NAME =[
+  'キャンペーン' , "重要" , "メンテナンス" , "重要"
+]

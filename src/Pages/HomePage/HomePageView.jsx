@@ -5,6 +5,7 @@ import {
   RecoomededPokerSection,
   HomePageFooterContainer,
   HomePageFormContainer,
+  Button,
 } from "../../Components";
 import StepsCard from "../../Components/StepsCard/StepsCard";
 import {
@@ -25,20 +26,30 @@ const HomePageView = () => {
     <div className=" homepage-wrapper bg-whitesmoke w-full flex flex-col text-[36px]  font-biz-udpgothic ">
       <HomePageHeaderContainer />
 
-      <div className="banner-section w-full">
-        <img className="h-[513px] w-full object-cover " alt="" src={banner} />
+      <div className="banner-section flex w-full">
+        <div className="w-1/2"></div>
+        <div className="w-1/2 banner-data flex flex-col justify-center items-end">
+          <div className="text text-[55px] w-3/4 mb-4 text-white">
+            <p className="mb-2">自動で最高レーキ</p>
+            <p>バックを受けよう！</p>
+          </div>
+          <div className="btn-div px-5 py-2 justify-around bg-slate-400 flex rounded-l-3xl w-3/4">
+            <button className="rounded-3xl w-2/3 px-3 text-white text-[15px] bg-royalblue-300 text-2xl">メールアドレスで登録する</button>
+            <button className="w-1/4 text-gray-100 text-smi bg-[transparent] flex flex-row items-center justify-center border-[2px] border-solid border-gray-100 rounded-81xl py-[9px] px-[20px] ">ログイン</button>
+          </div>
+        </div>
       </div>
 
       <section className="second-body mt-10 px-[90px]  w-full ">
         <RecoomededPokerSection />
         <div className="poker-information w-full h-auto py-[30px] justify-start gap-[35px] flex flex-col items-start  ">
           <h1 className="m-0  leading-[40px] font-bold font-inherit inline-block text-inherit">
-            <span>PokerBacks</span>
+            <span className="text-royalblue-300">PokerBacks</span>
             <span className="text-14xl text-gray-600">
               のレーキバックシステムとは？
             </span>
           </h1>
-          <p className="m-0  text-[2.3vh] tracking-[0.13em] leading-[36px] text-gray-400 inline-block h-auto ">
+          <p className="m-0  text-[18px] tracking-[0.13em] leading-[36px] text-gray-400 inline-block h-auto ">
             <span className="block">{`WPTGrobalでポーカーをプレイすると、プレイする度に「レーキ」と呼ばれる手数料が引かれていきます。`}</span>
             <span className=" ">
               PokerBacksに登録すると、そのかかったレーキの40%をプレイヤー様に還元することができます！
@@ -46,11 +57,7 @@ const HomePageView = () => {
           </p>
         </div>
         <div className="poker-life-cylce-image mt-0 flex flex-col items-center">
-          <img
-            className="h-auto"
-            alt=""
-            src={pokerLifeCycle}
-          />
+          <img className="h-auto" alt="" src={pokerLifeCycle} />
         </div>
 
         <div className="poker-back-steps my-20  flex w-full">
@@ -133,8 +140,12 @@ const HomePageView = () => {
       </div>
 
       <section className="body-2">
-        <div className="self-stretch">
-          <img className="" alt="" src={banner2} />
+        <div className="flex mt-10 justify-center items-center flex-col banner-2">
+          <h1 className="text-white mb-3">仮想通貨ウォレットのご利用方法！</h1>
+          <Button
+            btnName="仮想通貨ウォレットについて"
+            btnClassName="w-[180px] mt-3"
+          />
         </div>
 
         <div className="cards flex justify-around my-10 px-20">

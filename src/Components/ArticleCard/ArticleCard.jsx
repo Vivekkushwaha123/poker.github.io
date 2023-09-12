@@ -3,7 +3,9 @@ import Button from "../Button/Button";
 
 const ArticleCard = () => {
   return (
-    <div className="artical-wrapper w-full">
+    <div className="artical-wrapper w-full ">
+      <h2 className="text-center text-[20px] mb-5">ポーカーコラム</h2>
+
       <div className="gap-[13px] w-full text-left text-[14.54px] text-darkslategray-200 font-biz-udpgothic">
         {[1, 2, 3, 4]?.map((ele, i) => (
           <div className="article-card-wrapper w-full" key={i}>

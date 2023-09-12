@@ -1,6 +1,4 @@
 import React from "react";
-import FormCard from "../FormCard/FormCard";
-import { rightArrow } from "../../assests";
 
 const StepsCard = ({ number, img, text1, text2, text3, isArrow, btnName }) => {
   return (
