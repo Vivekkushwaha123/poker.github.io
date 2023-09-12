@@ -102,21 +102,21 @@ export const DASBBOARD_SIDEBAR_MENU = [
     img: home,
     route: "/",
   },
-  // {
-  //   text: "アカウント情報",
-  //   img: user,
-  //   route: "/user",
-  // },
+  {
+    text: "アカウント情報",
+    img: user,
+    route: "/account-info",
+  },
   {
     text: "アカウントの登録",
     img: adduser,
-    route: "/user",
+    route: "/add-user",
 
   },
   {
     text: "出金",
     img: dollar,
-    route: "/saving",
+    route: "/account-register",
   },
   {
     text: "アフィリエイト",
@@ -126,7 +126,7 @@ export const DASBBOARD_SIDEBAR_MENU = [
   {
     text: "サービスサイトへ",
     img: link,
-    route: "/myaccount",
+    route: "/homepage",
   },
   {
     text: "ログアウト",

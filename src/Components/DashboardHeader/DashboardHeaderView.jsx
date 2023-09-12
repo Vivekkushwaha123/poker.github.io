@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.scss";
-import "../Elements/Elements.scss";
 
 const DashboardHeaderView = () => {
   return (

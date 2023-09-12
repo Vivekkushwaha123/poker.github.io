@@ -54,12 +54,12 @@ function App() {
               path="/user-registration"
               element={<RegistrationContainer />}
             />
-            <Route path="/affiliate" element={<AffilateContainer />} />
-            <Route path="/homepage" element={<HomePageContainer />} />
-            <Route path="/user" element={<UserInformationContainer />} />
-            <Route path="/saving" element={<SavingsContainer />} />
-            <Route path="/myaccount" element={<MyAccountContainer />} />
             <Route path="/" element={<MyDashboardContainer />} />
+            <Route path="/homepage" element={<HomePageContainer />} />
+            <Route path="/add-user" element={<MyAccountContainer />} />
+            <Route path="/account-info" element={<UserInformationContainer />} />
+            <Route path="/affiliate" element={<AffilateContainer />} />
+            <Route path="/account-register" element={<SavingsContainer />} />
             <Route path="/withdraw" element={<MyAccountContainer />} />
             <Route
               path="/forgot-password"
