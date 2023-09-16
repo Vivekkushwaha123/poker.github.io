@@ -8,6 +8,7 @@ import DashboardSideBarContainer from "../Components/DashboardSidebar/DashboardS
 import MyDashboardContainer from "./MyDashboard/myDashboardContainer";
 import SavingsContainer from "./Savings/SavingsContainer";
 import HomePageContainer from "./HomePage/HomePageContainer";
+import WithdrawContainer from "./Withdraw/WithdrawContainer";
 
 
 export {
@@ -20,6 +21,7 @@ export {
     DashboardSideBarContainer,
     MyDashboardContainer,
     SavingsContainer,
-    HomePageContainer
+    HomePageContainer,
+    WithdrawContainer
 
 }

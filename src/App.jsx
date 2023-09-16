@@ -1,10 +1,10 @@
+import { useLayoutEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   useLocation,
 } from "react-router-dom";
-import "./App.css";
 import {
   LoginContainer,
   RegistrationContainer,
@@ -16,9 +16,11 @@ import {
   UserInformationContainer,
   DashboardSideBarContainer,
   HomePageContainer,
+  WithdrawContainer,
 } from "./Pages";
 import { Footer, HeaderContainer } from "./Components";
-import { useLayoutEffect, useState } from "react";
+
+import "./App.css";
 
 function App() {
   const [isLogin, setIsLogin] = useState(false);
@@ -60,7 +62,7 @@ function App() {
             <Route path="/account-info" element={<UserInformationContainer />} />
             <Route path="/affiliate" element={<AffilateContainer />} />
             <Route path="/account-register" element={<SavingsContainer />} />
-            <Route path="/withdraw" element={<MyAccountContainer />} />
+            <Route path="/withdraw" element={<WithdrawContainer />} />
             <Route
               path="/forgot-password"
               element={<ForgotPasswordContainer />}

@@ -116,7 +116,7 @@ export const DASBBOARD_SIDEBAR_MENU = [
   {
     text: "出金",
     img: dollar,
-    route: "/account-register",
+    route: "/withdraw",
   },
   {
     text: "アフィリエイト",
